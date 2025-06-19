@@ -5,6 +5,13 @@ h4,
 p,
 li {
   font-family: sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
 }
 
 h1 {
@@ -60,4 +67,34 @@ p {
 
 .related-posts-list {
   list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7ff;
+}
+
+aside {
+  background-color: #f7f7ff;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(2) {
+  color: red;
+}
+
+article p:last-child {
+  color: red;
 }
