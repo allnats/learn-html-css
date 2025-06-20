@@ -1,11 +1,6 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+body {
+  color: #454545;
   font-family: sans-serif;
-  color: #444;
 }
 
 h1,
@@ -119,4 +114,4 @@ a:hover {
 a:active {
   background-color: black;
   font-style: italic;
-}
+}f
