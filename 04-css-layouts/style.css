@@ -114,6 +114,7 @@ p {
 .author {
   font-style: italic;
   font-size: 18px;
+  margin: 0;
 }
 
 /* footer p {
@@ -127,6 +128,7 @@ p {
 .related-author {
   font-size: 18px;
   font-weight: bold;
+  margin: 0;
 }
 
 .related-posts-list {
@@ -191,7 +193,7 @@ a:active {
 
 /* Floats */
 
-.author-img {
+/* .author-img {
   float: left;
 }
 
@@ -221,16 +223,63 @@ a:active {
 
 article.post-content {
   float: left;
-  /* background-color: green; */
   width: 65%;
 }
 
 aside.related-post {
   float: right;
-  /* background-color: blue; */
   width: 30%;
 }
 
 footer {
   clear: both;
+} */
+
+/* Flexbox */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-header h1 {
+  flex-grow: 2;
+}
+
+.main-header nav {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.author-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.post-flex-container {
+  display: flex;
+  gap: 10%;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+.post-content {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.related-post-section {
+  flex: 0 1 30%;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
 }

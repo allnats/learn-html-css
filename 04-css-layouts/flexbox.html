@@ -41,10 +41,21 @@
 
         /* FLEXBOX */
         display: flex;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         align-items: center;
         justify-content: center;
-        gap: 30px;
+        /* gap: 30px; */
+      }
+
+      .el {
+        /* Default */
+        /* flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+
+        /* flex-basis: 200px; */
+        flex-shrink: 1;
+        /* flex-grow: 1; */
       }
 
       .el--1 {
@@ -59,6 +70,7 @@
 
       .el--6 {
         order: -1;
+        flex-grow: 1;
       }
     </style>
   </head>
