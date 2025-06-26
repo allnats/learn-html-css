@@ -119,15 +119,16 @@ body {
 .btn-cart {
   padding: 1em 0;
   border-style: none;
-  border-top: 5px solid white;
+  /* border-top: 5px solid white; */
   width: 100%;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   background-color: black;
   color: white;
   font-size: 1.3rem;
 }
 
 .btn-cart:hover {
+  border-top: 5px solid white;
   filter: invert(100);
   cursor: pointer;
 }
@@ -147,4 +148,46 @@ li {
 
 li:last-child {
   margin-bottom: 0;
+}
+
+/* CSS Layouts (Floats) */
+
+.product-img {
+  display: block;
+  float: left;
+  width: 30%;
+  height: auto;
+  margin-right: 5%;
+}
+
+.product-left {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+}
+
+.product-price-container {
+  clear: both;
+}
+
+.product-price {
+  float: left;
+}
+
+.shipping {
+  float: right;
+}
+
+.product-description {
+  clear: both;
+}
+
+.product-right {
+  float: right;
+  width: 30%;
+}
+
+.product-right,
+.product-left {
+  padding: 15px;
 }
